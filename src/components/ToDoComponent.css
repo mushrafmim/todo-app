@@ -1,0 +1,28 @@
+.ToDoComponent {
+    background-color: aliceblue;
+    /* width: 85%; */
+    margin: 0.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ToDoComponent p {
+    margin-left: 1rem;
+}
+
+.ToDoComponent .DeleteIcon {
+    opacity: 0;
+    height: inherit;
+}
+
+.ToDoComponent .DeleteIcon svg {
+    color: white;
+    padding: 0.5rem;
+}
+
+.ToDoComponent .DeleteIcon:hover {
+    opacity: 1;
+    background-color: red;
+    height: 100%;
+}
