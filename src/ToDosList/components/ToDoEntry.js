@@ -1,8 +1,8 @@
-import './ToDoComponent.css'
+import './ToDoEntry.css'
 import { AiFillDelete } from 'react-icons/ai'
 
 
-export default function ToDoComponent({ todo = "Buying A Laptop", deleteToDoFunction }) {
+export default function ToDoEntry({ todo = "Buying A Laptop", deleteToDoFunction }) {
     return (
         <div className="ToDoComponent">
             <p>{todo.todo}</p>

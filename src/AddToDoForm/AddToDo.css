@@ -1,13 +1,11 @@
 .AddToDo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 0rem;
     height: 50px;
 }
 
 .AddToDo form {
     display: flex;
+    justify-content: space-between;
 }
 
 .AddToDo .AddToDoInput {
@@ -32,6 +30,8 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(214, 0, 214);
+    border: none;
+    border-radius: 1rem;
 }
 
 .AddToDo .AddToDoButton svg {

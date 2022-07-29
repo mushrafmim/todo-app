@@ -1,8 +1,8 @@
 import {v4} from 'uuid';
 import { useState } from 'react';
 import './App.css';
-import AddToDo from './components/AddToDo';
-import ToDoComponent from './components/ToDoComponent';
+import AddToDo from './AddToDoForm/AddToDo';
+import ToDoWindow from './ToDosList/ToDosList';
 
 function App() {
 
@@ -33,13 +33,16 @@ function App() {
       <AddToDo
         addTodoFunction={addTodoFunction}
       />
-
-      {toDos.map((toDo, i) => (
+      <ToDoWindow
+        toDos={toDos}
+        deleteToDoFunction={deleteToDoFunction}
+      />
+      {/* {toDos.map((toDo, i) => (
         <ToDoComponent
           todo={toDo}
           deleteToDoFunction={deleteToDoFunction}
         />
-      ))}
+      ))} */}
 
     </div>
   );
